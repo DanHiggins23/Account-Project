@@ -3,7 +3,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello world to the standard out");
         printAccounts();
     }
 
@@ -24,7 +23,5 @@ public class App {
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
-
-        System.out.println(s.accounts);
     }
 }
