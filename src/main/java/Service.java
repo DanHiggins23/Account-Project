@@ -6,4 +6,8 @@ class Service {
     public void createAccount(Account person) {
         accounts.put(person.getAccountNum(), person);
     }
+
+    public void deleteUser(Account person) {
+        accounts.remove(person.getAccountNum(), person);
+    }
 }
