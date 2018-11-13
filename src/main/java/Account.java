@@ -3,6 +3,12 @@ public class Account {
     private String secondName;
     private int accountNum;
 
+    public Account(int accountNum, String firstName, String secondName) {
+        setAccountNum(accountNum);
+        setFirstName(firstName);
+        setSecondName(secondName);
+    }
+
     public String getFirstName() {
         return firstName;
     }

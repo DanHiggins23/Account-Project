@@ -4,9 +4,12 @@ public class App {
         printAccounts();
     }
 
-    public static void printAccounts() {
+    private static void printAccounts() {
         Service s = new Service();
-        s.createAccount();
+
+        Account Dan = new Account(1, "Dan", "Higgins");
+        s.createAccount(Dan);
+
         System.out.println(s.accounts.toString());
     }
 }
